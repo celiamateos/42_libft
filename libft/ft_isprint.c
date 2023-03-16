@@ -1,12 +1,22 @@
-#include<stdio.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cmateos- <cmateos-@student.42madrid.com>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/03/13 18:09:23 by cmateos-          #+#    #+#             */
+/*   Updated: 2023/03/13 18:10:09 by cmateos-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-int ft_isprint (unsigned char c)
+int	ft_isprint(unsigned char c)
 {
-    return ((c >= 32) && (c <= 126));
+	return ((c >= 32) && (c <= 126));
 }
-
+/*
 int main(void)
 {
     char c = 'a';
     printf("%d", ft_isprint(c));
-}
+}*/

@@ -1,11 +1,21 @@
-#include<stdio.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cmateos- <cmateos-@student.42madrid.com>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/03/13 18:00:00 by cmateos-          #+#    #+#             */
+/*   Updated: 2023/03/13 18:00:22 by cmateos-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-
-int ft_isalnum (unsigned char c)
+//#include<stdio.h>
+int	ft_isalnum(unsigned char c)
 {
-    return (ft_isdigit(c) && ft_isalpha(c));
-/*return ((c >= 'a' && c <='z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9'));*/
+	return (ft_isdigit(c) && ft_isalpha(c));
 }
+/*
 int main(void)
 {
     char c = '4';
@@ -20,4 +30,4 @@ int main(void)
     printf("%d\n", ft_isalnum(c4));
     printf("%d", ft_isalnum(c5));
     return (0);
-}
+}*/

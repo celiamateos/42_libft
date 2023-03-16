@@ -6,15 +6,12 @@
 /*   By: cmateos- <cmateos-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 20:18:13 by cmateos-          #+#    #+#             */
-/*   Updated: 2023/03/12 14:49:39 by cmateos-         ###   ########.fr       */
+/*   Updated: 2023/03/13 18:05:17 by cmateos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include<stdio.h>
-
 int	ft_isalpha(char c)
 {
-// OTRA MANERA DE HACERLO. Por definicion, true 1, false 0. 
-	return ((c >= 'a' && c <='z') || (c >= 'A' && c <= 'Z'));
+	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
 }
 /*
 int	main(int argc, char **argv)
@@ -24,7 +21,6 @@ int	main(int argc, char **argv)
 	
 	return (0);
 }
-*/
 
 int main(void)
 {
@@ -34,4 +30,4 @@ int main(void)
 	printf("%d\n", ft_isalpha(c));
 	printf("%d", ft_isalpha(c2));
 //el return (0) lo sobre entiende, no hace falta ponerlo jeje
-}
+}*/
