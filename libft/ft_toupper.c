@@ -6,10 +6,12 @@
 /*   By: cmateos- <cmateos-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/13 18:21:12 by cmateos-          #+#    #+#             */
-/*   Updated: 2023/03/13 20:27:50 by cmateos-         ###   ########.fr       */
+/*   Updated: 2023/03/21 18:52:09 by cmateos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-char	ft_toupper(unsigned char c)
+# include "libft.h"
+
+char	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
 		return (c - 32);
@@ -18,6 +20,6 @@ char	ft_toupper(unsigned char c)
 /*
 int	main(void)
 {
-	unsigned char c = 'C';
+	unsigned char c = 'a';
 	printf("%c", ft_toupper(c));
 }*/

@@ -6,10 +6,12 @@
 /*   By: cmateos- <cmateos-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/13 18:33:44 by cmateos-          #+#    #+#             */
-/*   Updated: 2023/03/13 20:31:00 by cmateos-         ###   ########.fr       */
+/*   Updated: 2023/03/21 18:54:37 by cmateos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-char	ft_tolower(unsigned char c)
+# include "libft.h"
+
+char	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 		return (c + 32);
@@ -18,6 +20,6 @@ char	ft_tolower(unsigned char c)
 /*
 int	main(void)
 {
-	unsigned char c = 'A';
+	unsigned char c = 'a';
 	printf("%c", ft_tolower(c));
 }*/

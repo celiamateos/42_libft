@@ -6,10 +6,12 @@
 /*   By: cmateos- <cmateos-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/12 15:26:31 by cmateos-          #+#    #+#             */
-/*   Updated: 2023/03/13 18:11:01 by cmateos-         ###   ########.fr       */
+/*   Updated: 2023/03/21 18:49:53 by cmateos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-int	ft_strlen(char *str)
+# include "libft.h"
+
+size_t	ft_strlen(const char *str)
 {
 	int	i;
 
@@ -22,6 +24,6 @@ int	ft_strlen(char *str)
 int	main(void)
 {
 	char	string [] = "Hello, how are you?I'm the philosophy girl";
-	printf ("%d", ft_strlen (string));
+	printf ("%zu", ft_strlen (string));
 	return (0);
 }*/

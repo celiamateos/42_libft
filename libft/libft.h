@@ -6,24 +6,24 @@
 /*   By: cmateos- <cmateos-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/12 17:12:44 by cmateos-          #+#    #+#             */
-/*   Updated: 2023/03/16 19:43:59 by cmateos-         ###   ########.fr       */
+/*   Updated: 2023/03/21 19:44:02 by cmateos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef LIBFT_H
 # define LIBFT_H
-# include <stdlib.h>
-# include <unistd.h>
-# include <stdio.h>
+# include "stdlib.h"
+# include "unistd.h"
+# include "stdio.h"
 
-int		ft_isalpha(char c);
-int		ft_isdigit(unsigned char c);
-int		ft_isalnum(unsigned char c);
-int		ft_isascii(char c);
-int		ft_isprint(unsigned char c);
-int		ft_strlen(char *str);
-char	ft_toupper(unsigned char c);
-char	ft_tolower(unsigned char c);
+int		ft_isalpha(int c);
+int		ft_isdigit(int c);
+int		ft_isalnum(int c);
+int		ft_isascii(int c);
+int		ft_isprint(int c);
+size_t	ft_strlen(const char *str);
+char	ft_toupper(int c);
+char	ft_tolower(int c);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
-
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 #endif

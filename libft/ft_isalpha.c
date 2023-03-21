@@ -6,10 +6,12 @@
 /*   By: cmateos- <cmateos-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 20:18:13 by cmateos-          #+#    #+#             */
-/*   Updated: 2023/03/13 18:05:17 by cmateos-         ###   ########.fr       */
+/*   Updated: 2023/03/21 18:37:09 by cmateos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-int	ft_isalpha(char c)
+# include "libft.h"
+
+int	ft_isalpha(int c)
 {
 	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
 }
@@ -24,8 +26,8 @@ int	main(int argc, char **argv)
 
 int main(void)
 {
-	char c = 'a';
-	char c2 = '2';
+	int	c = 'a';
+	int	c2 = '2';
 
 	printf("%d\n", ft_isalpha(c));
 	printf("%d", ft_isalpha(c2));

@@ -6,10 +6,11 @@
 /*   By: cmateos- <cmateos-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/13 18:07:54 by cmateos-          #+#    #+#             */
-/*   Updated: 2023/03/13 18:08:33 by cmateos-         ###   ########.fr       */
+/*   Updated: 2023/03/21 18:37:22 by cmateos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-int	ft_isdigit(unsigned char c)
+# include "libft.h"
+int	ft_isdigit(int c)
 {
 	return (c >= '0' && c <= '9');
 }
@@ -17,7 +18,7 @@ int	ft_isdigit(unsigned char c)
 int main(void)
 {
     char c = '4';
-    char c2 = '2';
+    char c2 = 'a';
 
     printf("%d\n", ft_isdigit(c));
     printf("%d", ft_isdigit(c2));

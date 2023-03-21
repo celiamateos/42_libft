@@ -6,11 +6,11 @@
 /*   By: cmateos- <cmateos-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/13 20:47:22 by cmateos-          #+#    #+#             */
-/*   Updated: 2023/03/15 18:18:38 by cmateos-         ###   ########.fr       */
+/*   Updated: 2023/03/21 18:57:56 by cmateos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include <libft.h>
+# include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {
@@ -25,14 +25,14 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return (NULL);
 }
-/*
+
 int	main(void)
 {
 	int c = 'Q';
 	const char s [] = "Hola CELIA";
-	char *result;
+	char	*result;
 	result = ft_strchr(s, c);
 	printf("%s", result);
 	return (0);
 }
-*/
+
