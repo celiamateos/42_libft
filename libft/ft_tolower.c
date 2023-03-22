@@ -6,10 +6,10 @@
 /*   By: cmateos- <cmateos-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/13 18:33:44 by cmateos-          #+#    #+#             */
-/*   Updated: 2023/03/21 18:54:37 by cmateos-         ###   ########.fr       */
+/*   Updated: 2023/03/22 19:42:49 by cmateos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-# include "libft.h"
+#include "libft.h"
 
 char	ft_tolower(int c)
 {

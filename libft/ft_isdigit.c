@@ -6,10 +6,11 @@
 /*   By: cmateos- <cmateos-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/13 18:07:54 by cmateos-          #+#    #+#             */
-/*   Updated: 2023/03/21 18:37:22 by cmateos-         ###   ########.fr       */
+/*   Updated: 2023/03/22 19:43:27 by cmateos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-# include "libft.h"
+#include "libft.h"
+
 int	ft_isdigit(int c)
 {
 	return (c >= '0' && c <= '9');
