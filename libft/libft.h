@@ -6,7 +6,7 @@
 /*   By: cmateos- <cmateos-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/12 17:12:44 by cmateos-          #+#    #+#             */
-/*   Updated: 2023/03/22 21:34:15 by cmateos-         ###   ########.fr       */
+/*   Updated: 2023/03/24 19:53:29 by cmateos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef LIBFT_H
@@ -26,4 +26,5 @@ char	ft_tolower(int c);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 #endif

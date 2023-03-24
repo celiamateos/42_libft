@@ -6,7 +6,7 @@
 #    By: cmateos- <cmateos-@student.42madrid.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/11 13:03:04 by cmateos-          #+#    #+#              #
-#    Updated: 2023/03/22 21:34:13 by cmateos-         ###   ########.fr        #
+#    Updated: 2023/03/24 19:53:40 by cmateos-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,6 +26,7 @@ SRC = ft_isalpha.c \
 	  ft_strchr.c \
 	  ft_strrchr.c \
 	  ft_strncmp.c \
+	  ft_strlcpy.c \
 # Crea los archivos .o
 OBJ = $(SRC:.c=.o)
 # Toma el mismo nombre del programa al que se dirige
