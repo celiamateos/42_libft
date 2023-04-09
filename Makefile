@@ -6,7 +6,7 @@
 #    By: cmateos- <cmateos-@student.42madrid.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/11 13:03:04 by cmateos-          #+#    #+#              #
-#    Updated: 2023/04/06 18:35:20 by cmateos-         ###   ########.fr        #
+#    Updated: 2023/04/09 17:54:15 by cmateos-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,6 +37,12 @@ SRC = ft_isalpha.c \
 	  ft_atoi.c \
 	  ft_calloc.c \
 	  ft_strdup.c \
+	  ft_substr.c \
+	  ft_strjoin.c \
+	  ft_strtrim.c \
+	  ft_split.c \
+	  ft_itoa.c \
+	  ft_strmapi.c \
 # Crea los archivos .o
 OBJ = $(SRC:.c=.o)
 # Toma el mismo nombre del programa al que se dirige

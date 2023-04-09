@@ -6,7 +6,7 @@
 /*   By: cmateos- <cmateos-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/07 17:10:29 by cmateos-          #+#    #+#             */
-/*   Updated: 2023/04/08 21:35:01 by cmateos-         ###   ########.fr       */
+/*   Updated: 2023/04/09 09:58:55 by cmateos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -68,7 +68,7 @@ char	**ft_split(char const *s, char c)
 	row = 0;
 	if (!s)
 		return (NULL);
-	arraystr = malloc((ft_countwords(s, c) + 1)  * sizeof(char *));
+	arraystr = malloc((ft_countwords(s, c) + 1) * sizeof(char *));
 	if (!arraystr)
 		return (NULL);
 	while (row < ft_countwords(s, c))
