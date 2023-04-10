@@ -6,7 +6,7 @@
 #    By: cmateos- <cmateos-@student.42madrid.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/11 13:03:04 by cmateos-          #+#    #+#              #
-#    Updated: 2023/04/09 17:54:15 by cmateos-         ###   ########.fr        #
+#    Updated: 2023/04/10 21:48:47 by cmateos-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,6 +43,11 @@ SRC = ft_isalpha.c \
 	  ft_split.c \
 	  ft_itoa.c \
 	  ft_strmapi.c \
+	  ft_striteri.c \
+	  ft_putchar_fd.c \
+	  ft_putstr_fd.c \
+	  ft_putendl_fd.c \
+	  ft_putnbr_fd.c \
 # Crea los archivos .o
 OBJ = $(SRC:.c=.o)
 # Toma el mismo nombre del programa al que se dirige
