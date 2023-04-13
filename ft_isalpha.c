@@ -6,9 +6,10 @@
 /*   By: cmateos- <cmateos-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 20:18:13 by cmateos-          #+#    #+#             */
-/*   Updated: 2023/03/22 19:40:42 by cmateos-         ###   ########.fr       */
+/*   Updated: 2023/04/12 20:40:38 by cmateos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/*Checks if the character passed as a parameter is a letter.*/
 #include "libft.h"
 
 int	ft_isalpha(int c)
