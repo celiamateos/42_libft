@@ -6,7 +6,7 @@
 /*   By: cmateos- <cmateos-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/07 17:10:29 by cmateos-          #+#    #+#             */
-/*   Updated: 2023/04/09 09:58:55 by cmateos-         ###   ########.fr       */
+/*   Updated: 2023/04/13 20:47:09 by cmateos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -40,7 +40,7 @@ static int	ft_lenstring(char const *s, char c, int i)
 	return (lenstr);
 }
 
-static int	ft_desmalokeo(char **arraystr, size_t row)
+static int	ft_desmalokeo(char **arraystr, int row)
 {
 	int	i;
 
