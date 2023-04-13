@@ -6,9 +6,10 @@
 /*   By: cmateos- <cmateos-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/13 18:00:00 by cmateos-          #+#    #+#             */
-/*   Updated: 2023/03/24 19:16:16 by cmateos-         ###   ########.fr       */
+/*   Updated: 2023/04/12 20:40:05 by cmateos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/*Checks if the character passed as a parameter is alphanumeric.*/
 #include "libft.h"
 
 int	ft_isalnum(int c)

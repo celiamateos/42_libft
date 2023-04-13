@@ -6,9 +6,10 @@
 /*   By: cmateos- <cmateos-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/13 18:07:54 by cmateos-          #+#    #+#             */
-/*   Updated: 2023/03/22 19:43:27 by cmateos-         ###   ########.fr       */
+/*   Updated: 2023/04/12 20:41:04 by cmateos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/*Checks if the character passed as a parameter is a number.*/
 #include "libft.h"
 
 int	ft_isdigit(int c)

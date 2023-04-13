@@ -6,20 +6,9 @@
 /*   By: cmateos- <cmateos-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/07 13:05:15 by cmateos-          #+#    #+#             */
-/*   Updated: 2023/04/07 17:03:41 by cmateos-         ###   ########.fr       */
+/*   Updated: 2023/04/13 17:46:14 by cmateos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*Esta función corta la parte de s1 que no coincide con la informacion de set
- * primer while = mientras la posicion de i sea distinto a nulo, recorre la
- * string. Porque strchr busca si la posicion de i se incluye en set y si 
- * no encuentra ese caracter devuelve nulo. Ahora tenemos la posicion en la
- * que queremos empezar a copiar.
- * segund while = recorre s1 desde el final de s1  mientras es distinta 
- * a lo que encuentra en set y mientras end sea mayor que i(ya que si no tb
- * buscaría en el set que hay antes de lo que quiero copiar.
- * El len de result es igal a la diferencia entre end e i + 1 porque end se
- * quedó en la ultima posición de lo que quiero copiar.
- * */
 #include "libft.h"
 
 char	*ft_strtrim(char const *s1, char const *set)

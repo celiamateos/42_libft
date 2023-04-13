@@ -6,9 +6,10 @@
 /*   By: cmateos- <cmateos-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/08 16:07:56 by cmateos-          #+#    #+#             */
-/*   Updated: 2023/04/09 09:58:36 by cmateos-         ###   ########.fr       */
+/*   Updated: 2023/04/12 20:42:50 by cmateos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/*Returns a memory space where the integer converted to character is stored.*/
 #include "libft.h"
 
 static int	ft_lennum(int n)

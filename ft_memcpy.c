@@ -6,7 +6,7 @@
 /*   By: cmateos- <cmateos-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/03 23:53:56 by cmateos-          #+#    #+#             */
-/*   Updated: 2023/04/05 12:36:09 by cmateos-         ###   ########.fr       */
+/*   Updated: 2023/04/13 17:47:29 by cmateos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -42,9 +42,4 @@ int	main(void)
 	printf("%s\n", result);
 	printf("%s", memcpy(dst, src, n));
 	return (0);
-}
-//Esta función copia(sobreescribe) n
-//caracteres de src en dst.
-//El if es para que no haga nada
-//si se encuentra NULL
-//./a.out = Holdo*/
+}*/

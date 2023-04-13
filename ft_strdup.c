@@ -6,16 +6,10 @@
 /*   By: cmateos- <cmateos-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/06 18:32:35 by cmateos-          #+#    #+#             */
-/*   Updated: 2023/04/06 19:11:53 by cmateos-         ###   ########.fr       */
+/*   Updated: 2023/04/12 21:02:10 by cmateos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*Asigna memoria suficiente para una copia de s1, realiza la copia y devuelve
- * un puntero a la misma.
- * Por ello primero creo ese puntero (p), hago un malloc del tamaño de s1 
- * un numero x de cajas y cada caja tendrá el tamaño de char, 1 byte.
- * Si p es nulo, es decir si el malloc ha fallado retornará nulo, este
- * control de errores es necesario siempre que haga malloc.
- * para copiar una cadena en otra utilizo strlcpy.*/
+/*Allocate enough memory to make a copy of s1 returns a pointer to it.*/
 #include "libft.h"
 
 char	*ft_strdup(const char *s1)

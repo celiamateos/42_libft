@@ -6,12 +6,12 @@
 /*   By: cmateos- <cmateos-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/10 16:26:08 by cmateos-          #+#    #+#             */
-/*   Updated: 2023/04/10 21:25:18 by cmateos-         ###   ########.fr       */
+/*   Updated: 2023/04/12 18:33:48 by cmateos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-void ft_striteri(char *s, void (*f) (unsigned int, char*))
+void	ft_striteri(char *s, void (*f) (unsigned int, char*))
 {
 	unsigned int	i;
 

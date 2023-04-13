@@ -6,9 +6,10 @@
 /*   By: cmateos- <cmateos-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/13 18:09:23 by cmateos-          #+#    #+#             */
-/*   Updated: 2023/03/22 19:42:20 by cmateos-         ###   ########.fr       */
+/*   Updated: 2023/04/12 20:41:30 by cmateos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/*Checks if the character passed as a parameter is printable.*/
 #include "libft.h"
 
 int	ft_isprint(int c)

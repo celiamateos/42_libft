@@ -6,14 +6,14 @@
 /*   By: cmateos- <cmateos-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/06 15:10:56 by cmateos-          #+#    #+#             */
-/*   Updated: 2023/04/06 17:16:17 by cmateos-         ###   ########.fr       */
+/*   Updated: 2023/04/12 20:55:52 by cmateos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*Esta funcion busca un caracter(c) en un bloque de memoria(*s). 
- * n es el número de bytes que se van a buscar a partir de la ubicacion inicial.
- * Return un puntero a primer byte donde encuentra c o un puntero nulo si no
- * encuentra c.
- * Solamente busca en una direccion, de izquierda a derecha.*/
+/*This function searches a character(c) in a memory block(*s).
+@n is the number of bytes to be searched from the initial location.
+@Return a pointer to the first byte where c is found 
+or a null pointer if c is not found finds c.
+Only searches in one direction, from left to right.*/
 #include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
@@ -44,7 +44,7 @@ int	main(void)
 	char	*result1;
 	size_t	n = 5;
 	result = ft_memchr(s, c, n);
-	result1 = ft_memchr(s, c, n);
+	result1 = memchr(s, c, n);
 	printf("ft_memchr: %s\n", result);
 	printf("memchr: %s", result1);
 	return (0);

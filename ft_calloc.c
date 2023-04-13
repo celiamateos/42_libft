@@ -6,18 +6,12 @@
 /*   By: cmateos- <cmateos-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/06 17:51:47 by cmateos-          #+#    #+#             */
-/*   Updated: 2023/04/06 18:31:37 by cmateos-         ###   ########.fr       */
+/*   Updated: 2023/04/12 20:39:10 by cmateos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/* Primero hago un malloc, reservar un espacio de memoria.
- * Count es el numero de elementos qe se deben asignar
- * Size es el tamaño de cada elemento en bytes
- * Lo primero creo un puntero(p) donde haré el malloc para reservar memoria.
- * El total de memoria será el numero de elementos por el tamaño de cada uno.
- * Si p está vacío retornará nulo (control de errores)
- * Hago un memset, el cual rellena cajas y le digo que lo rellene de 0 
- * y que necesito tantos ceros como bytes totales tiene ese puntero(p)
- * */
+/*Reserves a memory space that is filled with zeroes.
+ *@count is s the size of the string.
+ *@ size is the size of character that form it. */
 #include "libft.h"
 
 void	*ft_calloc(size_t count, size_t size)

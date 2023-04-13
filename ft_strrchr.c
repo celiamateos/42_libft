@@ -6,12 +6,10 @@
 /*   By: cmateos- <cmateos-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/16 18:08:24 by cmateos-          #+#    #+#             */
-/*   Updated: 2023/04/06 13:46:32 by cmateos-         ###   ########.fr       */
+/*   Updated: 2023/04/12 21:07:45 by cmateos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*Esta función busca la ultima aparicion del caracter c en la string *s,
- * por ello empieza a leer la string por el caracter nulo, de derecha a 
- * izquierda. Si no encuentra ningun c, retorna NULL*/
+/*Searches for the LAST occurrence of the character c in the string s*/
 #include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)

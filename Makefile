@@ -6,7 +6,7 @@
 #    By: cmateos- <cmateos-@student.42madrid.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/11 13:03:04 by cmateos-          #+#    #+#              #
-#    Updated: 2023/04/10 21:48:47 by cmateos-         ###   ########.fr        #
+#    Updated: 2023/04/13 17:57:28 by cmateos-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,6 +33,7 @@ SRC = ft_isalpha.c \
 	  ft_strrchr.c \
 	  ft_strncmp.c \
 	  ft_memchr.c \
+	  ft_memcmp.c \
 	  ft_strnstr.c \
 	  ft_atoi.c \
 	  ft_calloc.c \
@@ -52,7 +53,8 @@ SRC = ft_isalpha.c \
 OBJ = $(SRC:.c=.o)
 # Toma el mismo nombre del programa al que se dirige
 all: $(NAME)
-# Crea el programa a partir de los archivos .o (OBJ y ranlib es para que compile junto con la libreria)
+# Crea el programa a partir de los archivos .o (OBJ 
+# y ranlib es para que compile junto con la libreria)
 $(NAME): $(OBJ)
 	$(LIB) $(NAME) $(OBJ)
 	@ranlib $(NAME)
@@ -62,13 +64,13 @@ regle_a:
 # Transforma los archivos .c en .o (comprimidos)
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
-
+# Limpia todos los archivos .o que se generan mediante la compilación.
 clean:
 	rm -f $(OBJ)
-
+# Elimina los ejecutables generados.
 fclean: clean
 	rm -f $(NAME)
-
+# Limpia el medio ambiente y vuelve a compilar el programa.
 re: fclean all
 
 .PHONY: all, clean, fclean, re
