@@ -6,14 +6,14 @@
 #    By: cmateos- <cmateos-@student.42madrid.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/11 13:03:04 by cmateos-          #+#    #+#              #
-#    Updated: 2023/04/13 17:57:28 by cmateos-         ###   ########.fr        #
+#    Updated: 2023/04/17 19:42:46 by cmateos-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 TEXT = "It 's up to you to figure it out for yourselves!"
 NAME = libft.a
 CC = gcc
-FLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror
 LIB = ar rc
 SRC = ft_isalpha.c \
 	  ft_isdigit.c \
@@ -48,29 +48,32 @@ SRC = ft_isalpha.c \
 	  ft_putchar_fd.c \
 	  ft_putstr_fd.c \
 	  ft_putendl_fd.c \
-	  ft_putnbr_fd.c \
-# Crea los archivos .o
+	  ft_putnbr_fd.c
+SRC_BONUS = ft_lstnew_bonus.c
 OBJ = $(SRC:.c=.o)
-# Toma el mismo nombre del programa al que se dirige
+OBJ_BONUS = $(SRC_BONUS:.c=.o)
+
 all: $(NAME)
-# Crea el programa a partir de los archivos .o (OBJ 
-# y ranlib es para que compile junto con la libreria)
+
 $(NAME): $(OBJ)
 	$(LIB) $(NAME) $(OBJ)
 	@ranlib $(NAME)
-# Mi comentario guachi
-regle_a:
-	echo $(TEXT)
-# Transforma los archivos .c en .o (comprimidos)
+
+bonus: $(OBJ) $(OBJ_BONUS)
+	ar rcs -r $(NAME) $(OBJ_BONUS) $(OBJ)
+
 %.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
-# Limpia todos los archivos .o que se generan mediante la compilación.
+	$(CC) $(CFLAGS) -c -o $@ $<
+
+Coment:
+	echo $(TEXT)
 clean:
-	rm -f $(OBJ)
-# Elimina los ejecutables generados.
+	rm -rdf $(OBJ)
+	rm -rdf $(OBJ_BONUS)
+
 fclean: clean
-	rm -f $(NAME)
-# Limpia el medio ambiente y vuelve a compilar el programa.
+	rm -rdf $(NAME)
+
 re: fclean all
 
-.PHONY: all, clean, fclean, re
+.PHONY: all, clean, fclean, re, bonus

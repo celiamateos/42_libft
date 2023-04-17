@@ -6,16 +6,21 @@
 /*   By: cmateos- <cmateos-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/28 19:23:13 by cmateos-          #+#    #+#             */
-/*   Updated: 2023/04/13 17:58:35 by cmateos-         ###   ########.fr       */
+/*   Updated: 2023/04/17 20:13:35 by cmateos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdio.h>
 # include <string.h>
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}					t_list;
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
@@ -51,4 +56,5 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+t_list	*ft_lstnew(void *content);
 #endif
