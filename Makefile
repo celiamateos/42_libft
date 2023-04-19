@@ -6,7 +6,7 @@
 #    By: cmateos- <cmateos-@student.42madrid.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/11 13:03:04 by cmateos-          #+#    #+#              #
-#    Updated: 2023/04/17 19:42:46 by cmateos-         ###   ########.fr        #
+#    Updated: 2023/04/19 19:20:21 by cmateos-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -57,10 +57,9 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 	$(LIB) $(NAME) $(OBJ)
-	@ranlib $(NAME)
 
 bonus: $(OBJ) $(OBJ_BONUS)
-	ar rcs -r $(NAME) $(OBJ_BONUS) $(OBJ)
+	ar rc -r $(NAME) $(OBJ_BONUS) $(OBJ)
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c -o $@ $<

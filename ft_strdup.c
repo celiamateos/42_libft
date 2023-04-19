@@ -6,7 +6,7 @@
 /*   By: cmateos- <cmateos-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/06 18:32:35 by cmateos-          #+#    #+#             */
-/*   Updated: 2023/04/12 21:02:10 by cmateos-         ###   ########.fr       */
+/*   Updated: 2023/04/19 19:20:06 by cmateos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*Allocate enough memory to make a copy of s1 returns a pointer to it.*/
@@ -15,9 +15,7 @@
 char	*ft_strdup(const char *s1)
 {
 	char	*p;
-	int		i;
 
-	i = 0;
 	p = malloc((ft_strlen(s1) + 1) * sizeof(char));
 	if (p == NULL)
 		return (NULL);
